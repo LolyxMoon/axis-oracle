@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="src/assets/axis-logo.png" alt="AXIS Protocol" width="120" />
+<img src="apps/web/src/assets/axis-logo.png" alt="AXIS Protocol" width="120" />
 
 # AXIS Protocol
 
