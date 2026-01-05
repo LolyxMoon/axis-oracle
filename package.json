@@ -1,13 +1,14 @@
 {
   "name": "axis-monorepo",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint"
   },
   "devDependencies": {
-    "turbo": "latest",
+    "turbo": "2.7.2",
     "prettier": "latest"
   },
   "workspaces": [
