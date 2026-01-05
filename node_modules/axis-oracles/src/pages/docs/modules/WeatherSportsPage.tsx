@@ -22,7 +22,7 @@ const WeatherSportsPage: FC = () => {
             <h4 className="font-semibold text-foreground">Real-World Assets (RWA)</h4>
           </div>
           <p className="text-sm text-muted-foreground">
-            PIVOT enables permissionless oracles for any real-world data with verifiable APIs. 
+            CORE enables permissionless oracles for any real-world data with verifiable APIs. 
             Weather data is the first RWA module, with more coming soon (commodities, forex, economic indicators).
           </p>
         </div>
@@ -145,7 +145,7 @@ const WeatherSportsPage: FC = () => {
         </div>
 
         <Callout type="info">
-          <strong>Interested in Sports Oracles?</strong> Follow us on <a href="https://x.com/axis_oracle" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">X</a> to be notified when the Sports module launches
+          <strong>Interested in Sports Oracles?</strong> Follow us on <a href="https://x.com/pivot_oracle" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">X</a> to be notified when the Sports module launches
           and to provide feedback on which leagues and markets to prioritize.
         </Callout>
       </div>

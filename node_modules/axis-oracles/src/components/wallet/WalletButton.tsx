@@ -49,7 +49,7 @@ export const WalletButton: FC = () => {
 
     try {
       const message = new TextEncoder().encode(
-        "Welcome to AXIS. Sign to verify ownership."
+        "Welcome to CORE. Sign to verify ownership."
       );
       
       await signMessage(message);

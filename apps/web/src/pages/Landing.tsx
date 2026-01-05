@@ -17,8 +17,8 @@ import esportsIcon from '@/assets/esports-icon.png';
 
 const faqs = [
   {
-    question: 'What is PIVOT?',
-    answer: 'PIVOT is a permissionless oracle factory on Solana. It allows anyone to create custom data feeds for crypto prices, memecoins, weather, esports results and more — all powered by Switchboard On-Demand infrastructure.',
+    question: 'What is CORE?',
+    answer: 'CORE is a permissionless oracle factory on Solana. It allows anyone to create custom data feeds for crypto prices, memecoins, weather, esports results and more — all powered by Switchboard On-Demand infrastructure.',
   },
   {
     question: 'How much does it cost to create an oracle?',
@@ -37,7 +37,7 @@ const faqs = [
     answer: 'Yes. All data is verified through Switchboard TEE (Trusted Execution Environment) oracles before being written on-chain. The decentralized network of node operators ensures data integrity.',
   },
   {
-    question: 'Can I integrate PIVOT oracles into my dApp?',
+    question: 'Can I integrate CORE oracles into my dApp?',
     answer: 'Absolutely. Once deployed, each oracle has a unique public key that you can read from your Solana smart contract. We provide Rust/Anchor code examples in our documentation.',
   },
 ];
@@ -158,7 +158,7 @@ const Landing: FC = () => {
           >
             <img 
               src={axisLogo} 
-              alt="AXIS" 
+              alt="CORE" 
               className="h-24 md:h-32 w-auto mx-auto drop-shadow-lg"
             />
           </motion.div>
@@ -277,7 +277,7 @@ const Landing: FC = () => {
               The <span className="text-gradient-gold">Architecture</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              How PIVOT connects off-chain data to Solana
+              How CORE connects off-chain data to Solana
             </p>
           </motion.div>
 
@@ -557,13 +557,13 @@ const Landing: FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-3">
-              <img src={axisLogo} alt="AXIS" className="h-8 w-auto" />
-              <span className="font-bold text-foreground">PIVOT Protocol</span>
+              <img src={axisLogo} alt="CORE" className="h-8 w-auto" />
+              <span className="font-bold text-foreground">CORE Protocol</span>
             </div>
 
             <div className="flex items-center gap-8">
               <a 
-                href="https://x.com/axis_oracle" 
+                href="https://x.com/pivot_oracle" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors font-medium text-sm"
@@ -585,7 +585,7 @@ const Landing: FC = () => {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              © 2025 PIVOT Protocol. The Reference Point.
+              © 2025 CORE Protocol. The Reference Point.
             </p>
           </div>
         </div>

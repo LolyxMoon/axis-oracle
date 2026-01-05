@@ -9,7 +9,7 @@ const TrustModelPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Core Concepts</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Security & Trust Model</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          An honest assessment of PIVOT's security guarantees, trust assumptions, and potential failure modes.
+          An honest assessment of CORE's security guarantees, trust assumptions, and potential failure modes.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const TrustModelPage: FC = () => {
               <div>
                 <h3 className="font-semibold mb-2">Layer 1: Data Source APIs</h3>
                 <p className="text-muted-foreground text-sm mb-3">
-                  PIVOT relies on external APIs for raw data. These are trusted third parties.
+                  CORE relies on external APIs for raw data. These are trusted third parties.
                 </p>
                 <div className="grid gap-2">
                   <div className="flex items-center gap-2 text-sm">
@@ -77,9 +77,9 @@ const TrustModelPage: FC = () => {
             <div className="flex items-start gap-4">
               <Shield className="h-6 w-6 text-primary shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold mb-2">Layer 3: PIVOT Job Definitions</h3>
+                <h3 className="font-semibold mb-2">Layer 3: CORE Job Definitions</h3>
                 <p className="text-muted-foreground text-sm mb-3">
-                  PIVOT creates standardized job definitions that tell Switchboard how to fetch and parse data.
+                  CORE creates standardized job definitions that tell Switchboard how to fetch and parse data.
                 </p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
                   <li>• Job definitions are transparent and verifiable</li>

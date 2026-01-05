@@ -9,7 +9,7 @@ const LifecyclePage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Core Concepts</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Oracle Lifecycle</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          From creation to consumption: understanding the complete journey of an PIVOT oracle.
+          From creation to consumption: understanding the complete journey of an CORE oracle.
         </p>
       </div>
 
@@ -104,7 +104,7 @@ const LifecyclePage: FC = () => {
             <h3 className="text-lg font-semibold">Phase 1: Initialization</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            The user creates a new oracle feed through the PIVOT UI or directly via SDK.
+            The user creates a new oracle feed through the CORE UI or directly via SDK.
           </p>
           <div className="space-y-2 text-sm">
             <div className="flex items-start gap-2">

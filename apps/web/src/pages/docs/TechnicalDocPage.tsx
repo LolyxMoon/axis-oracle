@@ -12,10 +12,10 @@ const TechnicalDocPage = () => {
           Technical Documentation
         </Badge>
         <h1 className="text-4xl font-bold mb-4 text-foreground">
-          PIVOT Protocol — Full Technical Specification
+          CORE Protocol — Full Technical Specification
         </h1>
         <p className="text-muted-foreground text-lg">
-          Complete technical documentation for the PIVOT oracle factory protocol. 
+          Complete technical documentation for the CORE oracle factory protocol. 
           This document covers architecture, APIs, smart contracts, and settlement mechanics.
         </p>
       </div>
@@ -50,7 +50,7 @@ const TechnicalDocPage = () => {
         </h2>
         
         <p className="text-muted-foreground">
-          PIVOT is a <strong>permissionless oracle factory</strong> built on Solana that allows anyone to create 
+          CORE is a <strong>permissionless oracle factory</strong> built on Solana that allows anyone to create 
           custom data feeds for crypto prices, memecoins, weather, and esports. The protocol uses 
           Switchboard On-Demand for decentralized oracle infrastructure.
         </p>
@@ -83,7 +83,7 @@ SBondMDrcV3K4kxZR1HNVT7osZxAHVHgYXL5Ze1oMUv
 // Switchboard Mainnet Queue
 A43DyUGA7s8eXPxqEjJY6EBu1KKbNgfxF8h17VAHn13w
 
-// PIVOT Treasury Wallet
+// CORE Treasury Wallet
 5oPrhqL38zvCDoKgN56UmLNem526RE5CM1hzt6HoJwot`}
         />
       </section>
@@ -98,7 +98,7 @@ A43DyUGA7s8eXPxqEjJY6EBu1KKbNgfxF8h17VAHn13w
         </h2>
 
         <p className="text-muted-foreground">
-          PIVOT uses a <strong>pull-based oracle model</strong> where data is fetched on-demand 
+          CORE uses a <strong>pull-based oracle model</strong> where data is fetched on-demand 
           rather than continuously pushed. This significantly reduces costs and improves efficiency.
         </p>
 
@@ -158,7 +158,7 @@ A43DyUGA7s8eXPxqEjJY6EBu1KKbNgfxF8h17VAHn13w
         </h2>
 
         <p className="text-muted-foreground">
-          PIVOT supports multiple data modules, each with its own data source and oracle job definition.
+          CORE supports multiple data modules, each with its own data source and oracle job definition.
         </p>
 
         {/* Crypto Module */}
@@ -261,7 +261,7 @@ A43DyUGA7s8eXPxqEjJY6EBu1KKbNgfxF8h17VAHn13w
         </h2>
 
         <p className="text-muted-foreground">
-          Complete step-by-step process for creating a new PIVOT oracle:
+          Complete step-by-step process for creating a new CORE oracle:
         </p>
 
         <ol className="list-decimal list-inside space-y-2 text-muted-foreground ml-4">
@@ -295,7 +295,7 @@ A43DyUGA7s8eXPxqEjJY6EBu1KKbNgfxF8h17VAHn13w
         </h2>
 
         <p className="text-muted-foreground">
-          PIVOT uses a two-tier settlement architecture: Supabase Edge Function for orchestration 
+          CORE uses a two-tier settlement architecture: Supabase Edge Function for orchestration 
           and Railway service for on-chain transaction signing.
         </p>
 

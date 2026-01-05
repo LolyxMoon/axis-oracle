@@ -10,7 +10,7 @@ const RustIntegrationPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Developer Guide</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Rust / Anchor Integration</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Copy-paste examples for consuming PIVOT oracles in your Solana programs.
+          Copy-paste examples for consuming CORE oracles in your Solana programs.
         </p>
       </div>
 
@@ -61,7 +61,7 @@ pub struct ResolveBet<'info> {
     #[account(mut)]
     pub bet_account: Account<'info, BetAccount>,
     
-    /// The PIVOT oracle feed account
+    /// The CORE oracle feed account
     /// CHECK: Validated in instruction logic
     pub oracle_feed: AccountInfo<'info>,
     
@@ -100,7 +100,7 @@ pub struct ResolveBet<'info> {
     let raw_value = result.value;
     
     // For price feeds, convert to a usable format
-    // PIVOT uses 8 decimal places for crypto prices
+    // CORE uses 8 decimal places for crypto prices
     let scale = 8_u32;
     let price_scaled = raw_value; // Keep as i128 for precision
     
@@ -231,7 +231,7 @@ pub fn resolve_bet(ctx: Context<ResolveBet>) -> Result<()> {
           title="Converting Oracle Values"
           code={`/// Convert oracle value to a human-readable format
 /// 
-/// PIVOT oracles use different scales:
+/// CORE oracles use different scales:
 /// - Crypto prices: 8 decimal places
 /// - Memecoin prices: 18 decimal places  
 /// - Esports results: 0 decimal places (1, 2, or -1)

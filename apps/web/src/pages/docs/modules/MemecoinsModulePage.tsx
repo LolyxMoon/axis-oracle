@@ -101,7 +101,7 @@ const MemecoinsModulePage: FC = () => {
         </h2>
         
         <Callout type="warning">
-          <strong>Market Cap Filter:</strong> PIVOT blocks oracle creation for tokens with a market cap below $1,000,000.
+          <strong>Market Cap Filter:</strong> CORE blocks oracle creation for tokens with a market cap below $1,000,000.
           This protects users from creating oracles for easily manipulated low-liquidity tokens.
         </Callout>
 
@@ -138,7 +138,7 @@ const MemecoinsModulePage: FC = () => {
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold">Bonding Curve Verification</h2>
         <p className="text-muted-foreground">
-          For tokens launched via bonding curve platforms (like Pump.fun), PIVOT verifies the token has 
+          For tokens launched via bonding curve platforms (like Pump.fun), CORE verifies the token has 
           "graduated" from the bonding curve before allowing oracle creation.
         </p>
 
@@ -172,7 +172,7 @@ const MemecoinsModulePage: FC = () => {
             <h4 className="font-semibold text-amber-600 dark:text-amber-400 mb-2">DEX vs CEX Prices</h4>
             <p className="text-sm text-muted-foreground">
               DexScreener prices may differ from centralized exchange prices due to arbitrage delays
-              and different liquidity pools. PIVOT reports DEX prices only.
+              and different liquidity pools. CORE reports DEX prices only.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ const MemecoinsModulePage: FC = () => {
             <h4 className="font-semibold text-amber-600 dark:text-amber-400 mb-2">Rug Pulls</h4>
             <p className="text-sm text-muted-foreground">
               If a token's liquidity is pulled, the price will crash to near-zero.
-              The oracle will report this new (crashed) price. PIVOT cannot prevent or predict rug pulls.
+              The oracle will report this new (crashed) price. CORE cannot prevent or predict rug pulls.
             </p>
           </div>
         </div>

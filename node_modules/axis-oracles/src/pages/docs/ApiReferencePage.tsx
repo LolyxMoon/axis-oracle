@@ -219,7 +219,7 @@ const SWITCHBOARD_QUEUE = new PublicKey(
 // Crossbar Server
 const CROSSBAR_URL = "https://crossbar.switchboard.xyz";
 
-// AXIS Platform Treasury
+// CORE Platform Treasury
 const AXIS_TREASURY = new PublicKey(
   "AxisTreasuryXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 );

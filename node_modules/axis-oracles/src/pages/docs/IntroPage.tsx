@@ -15,11 +15,11 @@ const IntroPage: FC = () => {
           <span className="text-foreground">Introduction</span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight text-foreground mb-4">
-          PIVOT Protocol: The Resolution Layer for Solana.
+          CORE Protocol: The Resolution Layer for Solana.
         </h1>
         <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
           The infrastructure for permissionless prediction markets and verifiable data. 
-          Unlike legacy oracles, PIVOT provides on-demand, trustless settlement for ANY event—from 
+          Unlike legacy oracles, CORE provides on-demand, trustless settlement for ANY event—from 
           crypto prices to e-sports results.
         </p>
       </div>
@@ -64,11 +64,11 @@ const IntroPage: FC = () => {
         </NavLink>
       </div>
 
-      {/* Why PIVOT */}
-      <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">Why PIVOT?</h2>
+      {/* Why CORE */}
+      <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">Why CORE?</h2>
       <p className="text-muted-foreground leading-relaxed">
         Traditional oracle systems require manual multisig resolution or rely on centralized operators. 
-        PIVOT eliminates these trust assumptions by leveraging <strong className="text-foreground">Trusted Execution Environments (TEEs)</strong> via 
+        CORE eliminates these trust assumptions by leveraging <strong className="text-foreground">Trusted Execution Environments (TEEs)</strong> via 
         the Switchboard network to fetch and sign data with mathematical integrity.
       </p>
 
@@ -97,14 +97,14 @@ const IntroPage: FC = () => {
 
       <p className="text-muted-foreground leading-relaxed">
         Whether you need cryptocurrency prices, esports match results, weather data, or any custom API data, 
-        PIVOT makes it possible to bring that information on-chain in minutes—not weeks.
+        CORE makes it possible to bring that information on-chain in minutes—not weeks.
       </p>
 
       {/* Pull vs Push */}
       <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">Pull-Based Architecture</h2>
       <p className="text-muted-foreground leading-relaxed">
         Unlike traditional "push-based" oracles (like legacy Chainlink Price Feeds) that continuously 
-        update on-chain data regardless of demand, PIVOT uses a <strong className="text-foreground">pull-based model</strong>.
+        update on-chain data regardless of demand, CORE uses a <strong className="text-foreground">pull-based model</strong>.
       </p>
 
       <Callout type="info" title="Why Pull-Based?">
@@ -129,7 +129,7 @@ const IntroPage: FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-medium text-green-600 mb-2">✓ Pull Model (PIVOT)</h4>
+            <h4 className="text-sm font-medium text-green-600 mb-2">✓ Pull Model (CORE)</h4>
             <ul className="space-y-1 text-sm text-muted-foreground">
               <li>• On-demand updates only</li>
               <li>• Pay only when you need data</li>
@@ -144,7 +144,7 @@ const IntroPage: FC = () => {
       {/* How it works */}
       <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">How It Works</h2>
       <p className="text-muted-foreground leading-relaxed mb-6">
-        Creating and using an PIVOT oracle involves three simple steps:
+        Creating and using an CORE oracle involves three simple steps:
       </p>
 
       <div className="not-prose space-y-4">
@@ -167,7 +167,7 @@ const IntroPage: FC = () => {
           <div>
             <h4 className="font-medium text-foreground">Deploy On-Chain</h4>
             <p className="text-sm text-muted-foreground mt-1">
-              PIVOT creates a Switchboard Pull Feed account on Solana. This is your oracle's permanent address.
+              CORE creates a Switchboard Pull Feed account on Solana. This is your oracle's permanent address.
             </p>
           </div>
         </div>

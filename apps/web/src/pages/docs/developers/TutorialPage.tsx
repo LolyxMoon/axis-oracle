@@ -10,7 +10,7 @@ const TutorialPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Developer Guide</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Building a Betting DApp</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Step-by-step guide to building a complete prediction market DApp using PIVOT oracles.
+          Step-by-step guide to building a complete prediction market DApp using CORE oracles.
         </p>
       </div>
 
@@ -45,7 +45,7 @@ const TutorialPage: FC = () => {
           <div className="p-4 rounded-lg border border-border bg-muted/10">
             <h4 className="font-medium mb-2">3. Resolve Bets</h4>
             <p className="text-sm text-muted-foreground">
-              Once time passes, anyone can trigger resolution using the PIVOT oracle
+              Once time passes, anyone can trigger resolution using the CORE oracle
             </p>
           </div>
           <div className="p-4 rounded-lg border border-border bg-muted/10">
@@ -73,7 +73,7 @@ const TutorialPage: FC = () => {
             
             <div className="p-4 rounded-lg bg-background border border-primary/50 text-center">
               <Zap className="h-8 w-8 mx-auto mb-2 text-primary" />
-              <span className="font-medium">PIVOT Oracle</span>
+              <span className="font-medium">CORE Oracle</span>
               <p className="text-xs text-muted-foreground mt-1">Price Feed</p>
             </div>
             
@@ -90,16 +90,16 @@ const TutorialPage: FC = () => {
 
       {/* Step 1 */}
       <div className="space-y-4">
-        <h2 className="text-2xl font-semibold">Step 1: Create the PIVOT Oracle</h2>
+        <h2 className="text-2xl font-semibold">Step 1: Create the CORE Oracle</h2>
         
         <p className="text-muted-foreground">
-          First, use the PIVOT app to create a crypto price oracle for BTC/USD:
+          First, use the CORE app to create a crypto price oracle for BTC/USD:
         </p>
 
         <ol className="space-y-3 ml-4">
           <li className="flex items-start gap-3">
             <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center text-sm font-bold shrink-0">1</span>
-            <span className="text-muted-foreground">Go to <NavLink to="/app" className="text-primary hover:underline">PIVOT App</NavLink> and connect wallet</span>
+            <span className="text-muted-foreground">Go to <NavLink to="/app" className="text-primary hover:underline">CORE App</NavLink> and connect wallet</span>
           </li>
           <li className="flex items-start gap-3">
             <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center text-sm font-bold shrink-0">2</span>
@@ -125,7 +125,7 @@ const TutorialPage: FC = () => {
         <h2 className="text-2xl font-semibold">Step 2: The Anchor Program</h2>
         
         <p className="text-muted-foreground">
-          Create the betting program that references the PIVOT oracle:
+          Create the betting program that references the CORE oracle:
         </p>
 
         <CodeBlock
@@ -177,7 +177,7 @@ pub mod betting {
         Ok(())
     }
 
-    /// Resolve the bet using PIVOT oracle
+    /// Resolve the bet using CORE oracle
     pub fn resolve_bet(ctx: Context<ResolveBet>) -> Result<()> {
         let bet = &mut ctx.accounts.bet;
         
@@ -236,7 +236,7 @@ pub struct CreateBet<'info> {
     )]
     pub bet: Account<'info, Bet>,
     
-    /// CHECK: The PIVOT oracle feed
+    /// CHECK: The CORE oracle feed
     pub oracle_feed: AccountInfo<'info>,
     
     pub system_program: Program<'info, System>,
@@ -268,7 +268,7 @@ impl Bet {
         <h2 className="text-2xl font-semibold">Step 3: Frontend Integration</h2>
         
         <p className="text-muted-foreground">
-          Connect the frontend to both the betting program and PIVOT oracle:
+          Connect the frontend to both the betting program and CORE oracle:
         </p>
 
         <CodeBlock
@@ -279,7 +279,7 @@ import { PublicKey } from "@solana/web3.js";
 import { CrossbarClient } from "@switchboard-xyz/on-demand";
 import { useCallback, useState } from "react";
 
-const PIVOT = new PublicKey("YOUR_PIVOT_FEED_PUBKEY");
+const CORE = new PublicKey("YOUR_CORE_FEED_PUBKEY");
 
 export function useBetting() {
   const { connection } = useConnection();
@@ -289,7 +289,7 @@ export function useBetting() {
   // Fetch current oracle price for UI display
   const fetchCurrentPrice = useCallback(async () => {
     const crossbar = new CrossbarClient("https://crossbar.switchboard.xyz");
-    const result = await crossbar.simulateFeed(PIVOT_ORACLE_PUBKEY.toString());
+    const result = await crossbar.simulateFeed(CORE_ORACLE_PUBKEY.toString());
     const price = Number(result.value) / 1e8;
     setCurrentPrice(price);
     return price;
@@ -313,10 +313,10 @@ export function useBetting() {
   const resolveBet = useCallback(async (betPubkey: PublicKey) => {
     if (!wallet.publicKey) throw new Error("Wallet not connected");
     
-    // The program will read the PIVOT oracle automatically
+    // The program will read the CORE oracle automatically
     // ... program interaction code
     
-    console.log("Bet resolved using PIVOT oracle!");
+    console.log("Bet resolved using CORE oracle!");
   }, [wallet, connection]);
 
   return {
@@ -411,7 +411,7 @@ export function BetCreator() {
             <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center text-sm font-bold shrink-0">1</span>
             <div>
               <span className="font-medium">Deploy to Devnet</span>
-              <p className="text-sm text-muted-foreground">Use devnet PIVOT oracles for testing</p>
+              <p className="text-sm text-muted-foreground">Use devnet CORE oracles for testing</p>
             </div>
           </li>
           <li className="flex items-start gap-3">

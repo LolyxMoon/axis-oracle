@@ -25,7 +25,7 @@ const ExploreView: FC = () => {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground max-w-xl mx-auto"
           >
-            Discover all oracle feeds deployed on the PIVOT network.
+            Discover all oracle feeds deployed on the CORE network.
           </motion.p>
         </div>
       </section>

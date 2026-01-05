@@ -25,7 +25,7 @@ const ArchitecturePage: FC = () => {
       {/* Data Flow Diagram */}
       <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">Data Flow Overview</h2>
       <p className="text-muted-foreground leading-relaxed mb-6">
-        PIVOT leverages the Switchboard On-Demand infrastructure with TEE (Trusted Execution Environment) 
+        CORE leverages the Switchboard On-Demand infrastructure with TEE (Trusted Execution Environment) 
         verification to securely bring off-chain data onto Solana. Here's the complete data flow:
       </p>
 
@@ -34,7 +34,7 @@ const ArchitecturePage: FC = () => {
         <pre className="text-sm font-mono text-zinc-300 leading-relaxed">
 {`┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │                 │     │                 │     │                 │     │                 │
-│   Source API    │────▶│  PIVOT Protocol  │────▶│   TEE Oracles   │────▶│  Solana Account │
+│   Source API    │────▶│  CORE Protocol  │────▶│   TEE Oracles   │────▶│  Solana Account │
 │  (GeckoTerminal │     │  (Job Config)   │     │  (Switchboard)  │     │  (Your Feed)    │
 │   PandaScore)   │     │                 │     │                 │     │                 │
 └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
@@ -53,7 +53,7 @@ const ArchitecturePage: FC = () => {
         TEE Verification
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        The cornerstone of PIVOT's trustless architecture is <strong className="text-foreground">Trusted Execution Environment (TEE)</strong> verification. 
+        The cornerstone of CORE's trustless architecture is <strong className="text-foreground">Trusted Execution Environment (TEE)</strong> verification. 
         Every oracle update is fetched and signed inside a secure hardware enclave.
       </p>
 
@@ -90,7 +90,7 @@ const ArchitecturePage: FC = () => {
         Zero-Maintenance Settlement
       </h2>
       <p className="text-muted-foreground leading-relaxed">
-        Developers do not need to run their own crank nodes. PIVOT utilizes a network of 
+        Developers do not need to run their own crank nodes. CORE utilizes a network of 
         <strong className="text-foreground"> automated keepers</strong> (hosted on robust infrastructure like Railway) 
         to detect resolution criteria and settle markets instantly on-chain.
       </p>
@@ -123,7 +123,7 @@ const ArchitecturePage: FC = () => {
 
       <h3 className="text-lg font-medium text-foreground mt-8 mb-3">1. Source APIs</h3>
       <p className="text-muted-foreground leading-relaxed">
-        PIVOT supports multiple data sources out of the box:
+        CORE supports multiple data sources out of the box:
       </p>
       <ul className="list-disc list-inside text-muted-foreground space-y-2 my-4">
         <li><strong className="text-foreground">GeckoTerminal API</strong> — Aggregated DEX liquidity data and price feeds for any SPL token on Solana</li>
@@ -132,9 +132,9 @@ const ArchitecturePage: FC = () => {
         <li><strong className="text-foreground">PandaScore API</strong> — Esports match results and statistics</li>
       </ul>
 
-      <h3 className="text-lg font-medium text-foreground mt-8 mb-3">2. PIVOT Protocol Layer</h3>
+      <h3 className="text-lg font-medium text-foreground mt-8 mb-3">2. CORE Protocol Layer</h3>
       <p className="text-muted-foreground leading-relaxed">
-        When you create an oracle through PIVOT, the protocol:
+        When you create an oracle through CORE, the protocol:
       </p>
       <ul className="list-disc list-inside text-muted-foreground space-y-2 my-4">
         <li>Generates a Switchboard Job definition specifying the data source</li>
@@ -189,7 +189,7 @@ const jobDefinition = {
 
       <h3 className="text-lg font-medium text-foreground mt-8 mb-3">4. Solana Account</h3>
       <p className="text-muted-foreground leading-relaxed">
-        Each PIVOT oracle is represented by a Solana account containing:
+        Each CORE oracle is represented by a Solana account containing:
       </p>
       <ul className="list-disc list-inside text-muted-foreground space-y-2 my-4">
         <li><strong className="text-foreground">Feed Address</strong> — The unique public key identifying your oracle</li>
@@ -202,14 +202,14 @@ const jobDefinition = {
       <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">Trust Assumptions</h2>
       <p className="text-muted-foreground leading-relaxed">
         Transparency about trust is critical in decentralized systems. Here's what you're trusting 
-        when using PIVOT oracles:
+        when using CORE oracles:
       </p>
 
       <div className="not-prose my-8 space-y-4">
         <div className="p-4 rounded-lg border border-border">
           <h4 className="font-medium text-foreground mb-2">📡 Source API Reliability</h4>
           <p className="text-sm text-muted-foreground">
-            PIVOT relies on the underlying data sources (GeckoTerminal, PandaScore, etc.) for accurate data. 
+            CORE relies on the underlying data sources (GeckoTerminal, PandaScore, etc.) for accurate data. 
             If the source API provides incorrect data, the oracle will reflect that. TEE ensures the data 
             wasn't modified in transit, but cannot verify the source's accuracy.
           </p>
@@ -268,7 +268,7 @@ pub fn process_with_oracle(ctx: Context<ProcessOracle>) -> Result<()> {
         <h3 className="font-semibold text-foreground mb-2">Continue Learning</h3>
         <p className="text-sm text-muted-foreground mb-4">
           Now that you understand the architecture and TEE verification, learn how to integrate 
-          PIVOT oracles into your Solana applications.
+          CORE oracles into your Solana applications.
         </p>
         <NavLink to="/docs/integration">
           <Button variant="gold" size="sm" className="gap-2">

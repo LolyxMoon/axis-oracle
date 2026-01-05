@@ -18,7 +18,7 @@ const CryptoModulePage: FC = () => {
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold">Supported Trading Pairs</h2>
         <p className="text-muted-foreground">
-          PIVOT supports all tokens with sufficient DEX liquidity on Solana. Popular examples:
+          CORE supports all tokens with sufficient DEX liquidity on Solana. Popular examples:
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {['SOL/USD', 'ETH/USD', 'BTC/USD', 'USDC/USD', 'JUP/USD', 'BONK/USD', 'WIF/USD', 'RAY/USD'].map((pair) => (
@@ -143,7 +143,7 @@ const humanPrice = Number(rawValue) / Math.pow(10, scale);
           language="json"
           title="Crypto Price Job"
           code={`{
-  "name": "AXIS_CRYPTO_SOL_USD",
+  "name": "CORE_CRYPTO_SOL_USD",
   "tasks": [
     {
       "httpTask": {

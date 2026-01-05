@@ -36,11 +36,11 @@ export const AppHeader: FC = () => {
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <img 
               src={axisLogo} 
-              alt="PIVOT" 
+              alt="CORE" 
               className="h-8 w-auto"
             />
             <span className="text-lg font-bold tracking-tight text-foreground">
-              PIVOT
+              CORE
             </span>
           </Link>
 

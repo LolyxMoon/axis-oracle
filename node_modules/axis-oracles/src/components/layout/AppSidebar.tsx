@@ -58,11 +58,11 @@ export const AppSidebar: FC = () => {
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <img 
             src={axisLogo} 
-            alt="AXIS" 
+            alt="CORE" 
             className="h-8 w-auto"
           />
           <span className="text-lg font-bold tracking-tight text-foreground">
-            PIVOT
+            CORE
           </span>
         </Link>
       </SidebarHeader>
@@ -131,7 +131,7 @@ export const AppSidebar: FC = () => {
         </div>
 
         <a
-          href="/docs"
+          href="/docs/intro"
           className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-primary/5"
         >
           <ExternalLink className="h-4 w-4" />

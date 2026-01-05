@@ -10,7 +10,7 @@
 
 **The Resolution Layer for Solana**
 
-[Launch App](https://axisoracle.com/app) | [Documentation](https://axisoracle.com/docs) | [Twitter](https://x.com/axis_oracle) | [GitHub](https://github.com/axis-oracle)
+[Launch App](https://axisoracle.com/app) | [Documentation](https://axisoracle.com/docs) | [Twitter](https://x.com/pivot_oracle) | [GitHub](https://github.com/axis-oracle)
 
 </div>
 

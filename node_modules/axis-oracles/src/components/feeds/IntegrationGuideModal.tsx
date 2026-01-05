@@ -66,7 +66,7 @@ export const IntegrationGuideModal: FC<IntegrationGuideModalProps> = ({
   const typescriptCode = `import { Connection, PublicKey } from "@solana/web3.js";
 import * as sb from "@switchboard-xyz/on-demand";
 
-// Your PIVOT Oracle Feed Address
+// Your CORE Oracle Feed Address
 const FEED_PUBKEY = new PublicKey("${feed.feed_pubkey}");
 
 async function readOracleValue() {
@@ -97,7 +97,7 @@ async function readOracleValue() {
 
 // For prediction markets: Check if feed is settled
 async function checkFeedStatus() {
-  // Query PIVOT API for settlement status
+  // Query CORE API for settlement status
   const response = await fetch(
     "https://zryeulucckdgaiboxntn.supabase.co/rest/v1/feeds?feed_pubkey=eq.${feed.feed_pubkey}",
     { headers: { "apikey": "YOUR_SUPABASE_ANON_KEY" } }
@@ -116,7 +116,7 @@ async function checkFeedStatus() {
   const rustCode = `use anchor_lang::prelude::*;
 use switchboard_on_demand::on_demand::accounts::pull_feed::PullFeedAccountData;
 
-// Your PIVOT Oracle Feed Address
+// Your CORE Oracle Feed Address
 pub const FEED_PUBKEY: Pubkey = pubkey!("${feed.feed_pubkey}");
 
 #[derive(Accounts)]
@@ -127,7 +127,7 @@ pub struct ReadOracle<'info> {
 }
 
 pub fn read_oracle_value(ctx: Context<ReadOracle>) -> Result<()> {
-    // Validate this is the correct PIVOT feed
+    // Validate this is the correct CORE feed
     require!(
         ctx.accounts.feed.key() == FEED_PUBKEY,
         CustomError::InvalidFeedAddress
@@ -318,7 +318,7 @@ pub enum CustomError {
             </Button>
             <Button variant="outline" size="sm" asChild>
               <a href="/docs/integration">
-                PIVOT Integration Guide
+                CORE Integration Guide
               </a>
             </Button>
           </div>

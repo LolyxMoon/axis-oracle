@@ -9,7 +9,7 @@ const DataFlowPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Core Concepts</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Data Flow</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Understanding how data moves from external APIs to your Solana program through the PIVOT oracle network.
+          Understanding how data moves from external APIs to your Solana program through the CORE oracle network.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ const DataFlowPage: FC = () => {
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center p-4 rounded-lg bg-background border border-primary/50 min-w-[140px]">
             <Shield className="h-8 w-8 text-primary mb-2" />
-            <span className="font-medium">PIVOT Layer</span>
+            <span className="font-medium">CORE Layer</span>
             <span className="text-xs text-muted-foreground mt-1">Validation & Formatting</span>
           </div>
           
@@ -79,9 +79,9 @@ const DataFlowPage: FC = () => {
                 2
               </div>
               <div>
-                <h3 className="font-semibold mb-1">PIVOT Validation Layer</h3>
+                <h3 className="font-semibold mb-1">CORE Validation Layer</h3>
                 <p className="text-muted-foreground text-sm">
-                  The PIVOT job definition specifies how to parse and validate the API response. This includes:
+                  The CORE job definition specifies how to parse and validate the API response. This includes:
                 </p>
                 <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                   <li>• JSON path extraction (e.g., <code className="text-xs bg-muted px-1 rounded">$.price</code>)</li>
@@ -137,7 +137,7 @@ const DataFlowPage: FC = () => {
         
         <div className="grid md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg border border-green-500/30 bg-green-500/5">
-            <h3 className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ PIVOT (Pull Model)</h3>
+            <h3 className="font-semibold text-green-600 dark:text-green-400 mb-2">✓ CORE (Pull Model)</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>• Data fetched only when needed</li>
               <li>• Consumer pays for the update</li>
@@ -161,7 +161,7 @@ const DataFlowPage: FC = () => {
       </div>
 
       <Callout type="info">
-        <strong>Gas Efficiency:</strong> Because PIVOT uses a pull model, you only pay for oracle updates when you actually need the data.
+        <strong>Gas Efficiency:</strong> Because CORE uses a pull model, you only pay for oracle updates when you actually need the data.
         This can reduce oracle costs by 90%+ compared to traditional push-based systems.
       </Callout>
     </div>

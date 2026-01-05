@@ -48,11 +48,11 @@ const LandingNavbar: FC = () => {
           <a href="#" className="flex items-center gap-3 z-10">
             <img 
               src={axisLogo} 
-              alt="AXIS" 
+              alt="CORE" 
               className="h-10 w-auto"
             />
             <span className="text-xl font-bold text-foreground tracking-tight">
-              AXIS
+              CORE
             </span>
           </a>
 
@@ -79,7 +79,7 @@ const LandingNavbar: FC = () => {
 
             {/* Twitter/X Icon */}
             <a
-              href="https://x.com/axis_oracle"
+              href="https://x.com/pivot_oracle"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-9 h-9 rounded-md bg-background/50 backdrop-blur-md border border-primary/40 shadow-sm text-foreground hover:bg-background hover:text-primary hover:border-primary/60 transition-all"
@@ -96,7 +96,7 @@ const LandingNavbar: FC = () => {
 
             {/* GitHub Icon */}
             <a
-              href="https://github.com/axis-oracle"
+              href="https://github.com/LolyxMoon/PivotOracle"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-9 h-9 rounded-md bg-background/50 backdrop-blur-md border border-primary/40 shadow-sm text-foreground hover:bg-background hover:text-primary hover:border-primary/60 transition-all"
@@ -118,7 +118,7 @@ const LandingNavbar: FC = () => {
               asChild
               className="bg-background/50 backdrop-blur-md border-primary/40 shadow-sm text-foreground font-semibold hover:text-primary hover:border-primary/60 transition-all"
             >
-              <a href="/docs">
+              <a href="/docs/intro">
                 Docs
               </a>
             </Button>

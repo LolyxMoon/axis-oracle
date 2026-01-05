@@ -291,11 +291,11 @@ const ErrorsPage: FC = () => {
           If you're still encountering issues, we're here to help:
         </p>
         <div className="grid md:grid-cols-2 gap-4">
-          <a href="https://x.com/axis_oracle" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg border border-border hover:border-primary/50 transition-colors">
+          <a href="https://x.com/pivot_oracle" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg border border-border hover:border-primary/50 transition-colors">
             <h4 className="font-medium">Twitter / X</h4>
             <p className="text-sm text-muted-foreground mt-1">Get updates and connect with the team</p>
           </a>
-          <a href="https://github.com/axis-oracle" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg border border-border hover:border-primary/50 transition-colors">
+          <a href="https://github.com/LolyxMoon/PivotOracle" target="_blank" rel="noopener noreferrer" className="p-4 rounded-lg border border-border hover:border-primary/50 transition-colors">
             <h4 className="font-medium">GitHub</h4>
             <p className="text-sm text-muted-foreground mt-1">Report bugs and track known issues</p>
           </a>

@@ -175,7 +175,7 @@ const DocsLayout: FC = () => {
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2 mr-6 group">
-            <img src={axisLogo} alt="AXIS" className="h-6 w-auto transition-transform group-hover:scale-105" />
+            <img src={axisLogo} alt="CORE" className="h-6 w-auto transition-transform group-hover:scale-105" />
             <span className="font-semibold text-foreground">Docs</span>
           </NavLink>
 
@@ -239,7 +239,7 @@ const DocsLayout: FC = () => {
               </Button>
             </NavLink>
             <a 
-              href="https://github.com/axis-oracle" 
+              href="https://github.com/LolyxMoon/PivotOracle" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -310,7 +310,7 @@ const DocsLayout: FC = () => {
                 Build a DApp
               </NavLink>
               <a 
-                href="https://github.com/axis-oracle" 
+                href="https://github.com/LolyxMoon/PivotOracle" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors"

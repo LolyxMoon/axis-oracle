@@ -64,7 +64,7 @@ const EsportsModulePage: FC = () => {
           Smart Duration Logic
         </h2>
         <p className="text-muted-foreground">
-          Match duration varies significantly by format. PIVOT automatically calculates expected duration based on match type:
+          Match duration varies significantly by format. CORE automatically calculates expected duration based on match type:
         </p>
         
         <div className="overflow-x-auto">
@@ -131,7 +131,7 @@ const EsportsModulePage: FC = () => {
           Early Settlement Mechanism
         </h2>
         <p className="text-muted-foreground">
-          PIVOT includes a <strong>preflight check</strong> that allows early settlement when the match ends before the estimated time:
+          CORE includes a <strong>preflight check</strong> that allows early settlement when the match ends before the estimated time:
         </p>
         
         <div className="p-5 rounded-lg border border-border bg-muted/10">
@@ -222,7 +222,7 @@ const EsportsModulePage: FC = () => {
               If the API reports an incorrect result (rare but possible), there is no on-chain mechanism to dispute.
             </p>
             <div className="p-3 rounded bg-background/50 text-sm">
-              <strong>Reality:</strong> PIVOT oracles report what the data source says. Disputes must be handled off-chain through your DApp's terms of service.
+              <strong>Reality:</strong> CORE oracles report what the data source says. Disputes must be handled off-chain through your DApp's terms of service.
             </div>
           </div>
         </div>

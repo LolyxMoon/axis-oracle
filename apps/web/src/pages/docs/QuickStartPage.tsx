@@ -10,7 +10,7 @@ const QuickStartPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Getting Started</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Quick Start</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Get up and running with PIVOT in under 5 minutes. Create your first oracle and consume data on-chain.
+          Get up and running with CORE in under 5 minutes. Create your first oracle and consume data on-chain.
         </p>
       </div>
 
@@ -23,7 +23,7 @@ const QuickStartPage: FC = () => {
           </div>
           <h2 className="text-xl font-semibold mb-3">Connect Your Wallet</h2>
           <p className="text-muted-foreground mb-4">
-            Visit the PIVOT app and connect your Solana wallet. We support Phantom, Solflare, and all major wallet adapters.
+            Visit the CORE app and connect your Solana wallet. We support Phantom, Solflare, and all major wallet adapters.
           </p>
           <NavLink 
             to="/app" 
@@ -135,7 +135,7 @@ console.log("Current Value:", result.value);`}
         <NavLink to="/docs/developers/tutorial" className="text-primary hover:underline">
           step-by-step tutorial
         </NavLink>{' '}
-        for building a complete betting DApp with PIVOT oracles.
+        for building a complete betting DApp with CORE oracles.
       </Callout>
 
       {/* Next steps */}

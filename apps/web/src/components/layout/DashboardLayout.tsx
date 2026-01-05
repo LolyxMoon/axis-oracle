@@ -32,7 +32,7 @@ export const DashboardLayout: FC<DashboardLayoutProps> = ({ children }) => {
           <footer className="py-6 border-t border-border/30">
             <div className="container mx-auto px-4 text-center">
               <p className="text-sm text-muted-foreground">
-                © 2025 AXIS Protocol. The Reference Point.
+                © 2025 CORE Protocol. The Reference Point.
               </p>
             </div>
           </footer>

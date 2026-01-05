@@ -22,12 +22,12 @@ export const Header: FC = () => {
           >
             <img 
               src={axisLogo} 
-              alt="PIVOT" 
+              alt="CORE" 
               className="h-10 md:h-12 w-auto"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-foreground">
-                PIVOT
+                CORE
               </span>
               <span className="text-[10px] text-muted-foreground tracking-widest uppercase">
                 Oracle Layer

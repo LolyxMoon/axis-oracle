@@ -9,7 +9,7 @@ const InstallationPage: FC = () => {
         <p className="text-sm text-primary font-medium mb-2">Developer Guide</p>
         <h1 className="text-4xl font-bold tracking-tight mb-4">Installation</h1>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Set up your development environment to interact with PIVOT oracles.
+          Set up your development environment to interact with CORE oracles.
         </p>
       </div>
 
@@ -40,7 +40,7 @@ const InstallationPage: FC = () => {
         </h2>
         
         <p className="text-muted-foreground">
-          Install the Switchboard On-Demand SDK to interact with PIVOT oracles from your TypeScript/JavaScript application.
+          Install the Switchboard On-Demand SDK to interact with CORE oracles from your TypeScript/JavaScript application.
         </p>
 
         <CodeBlock
@@ -84,7 +84,7 @@ async function main() {
   const connection = new Connection("https://api.mainnet-beta.solana.com");
   
   // Initialize the Crossbar client
-  const crossbar = new CrossbarClient("https://crossbar.switchboard.xyz");
+  const crossbar = new CrossbarClient("https://crosssbar.switchboard.xyz");
   
   // Example: Read a public BTC/USD oracle
   const feedPubkey = new PublicKey("YOUR_FEED_PUBKEY_HERE");

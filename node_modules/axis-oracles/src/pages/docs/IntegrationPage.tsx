@@ -18,7 +18,7 @@ const IntegrationPage: FC = () => {
           Integration Guide
         </h1>
         <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-          Learn how to consume PIVOT oracles in your Solana applications using 
+          Learn how to consume CORE oracles in your Solana applications using 
           TypeScript and Rust/Anchor.
         </p>
       </div>
@@ -70,7 +70,7 @@ solana-program = "1.17"`}
 
       {/* Consuming an AXIS Feed - TypeScript */}
       <h2 className="text-2xl font-semibold text-foreground mt-12 mb-4">
-        Consuming an AXIS Feed (TypeScript)
+        Consuming an CORE Feed (TypeScript)
       </h2>
       
       <p className="text-muted-foreground leading-relaxed">
@@ -87,7 +87,7 @@ import { Connection, PublicKey, Keypair } from "@solana/web3.js";
 // Your RPC endpoint (use a dedicated RPC for production)
 const connection = new Connection("https://api.mainnet-beta.solana.com");
 
-// The AXIS oracle feed address you created or want to consume
+// The CORE oracle feed address you created or want to consume
 const AXIS_FEED_PUBKEY = new PublicKey("YourAxisFeedAddress...");
 
 async function fetchOracleValue() {
@@ -206,7 +206,7 @@ declare_id!("YourProgramId...");
 pub mod your_protocol {
     use super::*;
 
-    /// Resolve a bet using PIVOT oracle data
+    /// Resolve a bet using CORE oracle data
     pub fn resolve_bet(ctx: Context<ResolveBet>) -> Result<()> {
         // Load the oracle feed account
         let feed_account = &ctx.accounts.oracle_feed;
@@ -250,7 +250,7 @@ pub struct ResolveBet<'info> {
     #[account(mut)]
     pub bet: Account<'info, Bet>,
     
-    /// The PIVOT oracle feed account
+    /// The CORE oracle feed account
     /// CHECK: Validated by Switchboard SDK
     pub oracle_feed: AccountInfo<'info>,
     
@@ -356,7 +356,7 @@ async function safeOracleFetch(connection: Connection, feedPubkey: PublicKey) {
           <h4 className="font-medium text-foreground mb-2">💡 Pro Tip: Copy Feed Pubkey from Dashboard</h4>
           <p className="text-sm text-muted-foreground">
             You can copy your specific <InlineCode>Feed Pubkey</InlineCode> directly from the 
-            PIVOT Dashboard after creating an oracle. Look for the copy button next to the address.
+            CORE Dashboard after creating an oracle. Look for the copy button next to the address.
           </p>
         </div>
 
@@ -393,7 +393,7 @@ async function safeOracleFetch(connection: Connection, feedPubkey: PublicKey) {
           for complete SDK documentation.
         </p>
         <div className="flex gap-3">
-          <a href="https://x.com/axis_oracle" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/pivot_oracle" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm">
               Follow on X
             </Button>
