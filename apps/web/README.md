@@ -18,7 +18,7 @@
 
 ## What is AXIS?
 
-AXIS Protocol is a **permissionless oracle factory** that enables anyone to deploy custom data feeds on Solana in under 60 seconds. Built on [Switchboard's TEE-verified infrastructure](https://switchboard.xyz), AXIS provides cryptographically-proven, tamper-proof data for DeFi, prediction markets, gaming, and beyond.
+AXISa Protocol is a **permissionless oracle factory** that enables anyone to deploy custom data feeds on Solana in under 60 seconds. Built on [Switchboard's TEE-verified infrastructure](https://switchboard.xyz), AXIS provides cryptographically-proven, tamper-proof data for DeFi, prediction markets, gaming, and beyond.
 
 ### The Problem
 
